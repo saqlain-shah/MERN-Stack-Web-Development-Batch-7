@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<style>
+   
+   .container{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 2px inset black;
+    margin: 5%;
+    margin-left: 10%;
+    padding-top: 8%;
+    padding-bottom: 5%;
+    border-radius: 10px;
+    
+  
+
+   }
+   .container .head{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+   }
+   .head .logo{
+    width: 25%;
+    height: 20%;
+    /* margin-top: 5%; */
+   }
+   .logo img{
+    width: 100%;
+    height: inherit;
+   }
+   .head .reg-div{
+    width: 50%;
+    height: 40%;
+    text-align: center;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+   }
+   .container .formBody{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+   }
+   .formBody .leftForm{
+    width: 40%;
+    height: inherit;
+
+   }
+   .leftForm input{
+    width: 70%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+   }
+   .formBody .rightForm{
+    width: 40%;
+    height: inherit;
+    
+   }
+   .rightForm input{
+    width: 70%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+   }
+   .container .box{
+    width: 80%;
+    height: 40%;
+    margin-left: 10%;
+   }
+   .box #txt{
+    width: 30%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+   }
+   .box #no{
+    width: 20%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+   }
+   .box #ex{
+    width: 20%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+   }
+   #btn{
+    width: 100px;
+    height: 30px;
+   }
+  #reg-text::first-letter{
+    font-size: 40px;
+    color: red;
+  }
+  #form-text::first-letter{
+    font-size: 50px;
+    color: blue;
+  }
+  #date{
+    font-weight: lighter;
+    font-size: 20px;
+    
+  }
+  legend{
+    font-size: 20px;
+    font-weight: bolder;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+  }
+  legend::first-letter{
+    color: red;
+  }
+   
+</style>
+<body>
+  <fieldset class="container">
+    <legend>Registration Form</legend>
+    <!-- <div class="container"> -->
+        <div class="head">
+  <div class="logo">
+    <img src="download.png" alt="logo">
+  </div>
+  <div class="reg-div">
+    <H3 id="reg-text">REGISTRATION</H3>
+    <H1 id="form-text">FORM</H1>
+    <H3 id="date">08-Feb-2024</H3>
+  </div>
+</div>
+<div class="formBody">
+  <div class="leftForm">
+  <h2>Mailing Address</h2>
+ 
+   Name:
+   <input type="text" required><br><br>
+   Company:
+   <input type="text" required><br><br>
+   Address:
+   <input type="text" required><br><br>
+   Phone:
+   <input type="number" required><br><br>
+   Email: 
+   <input type="email" required><br><br>
+  </div>
+  <div class="rightForm">
+  <h2>Billing Address</h2>
+  Name: 
+   <input type="text" required><br><br>
+   Company:
+   <input type="text" required><br><br>
+   Address:
+   <input type="text" required><br><br>
+   Phone:
+   <input type="number" required><br><br>
+   Email: 
+   <input type="email" required><br><br>
+  </div>
+</div>
+<div class="box">
+    <br><br>
+    <input type="checkbox">Billing address is the same as above
+    <br><br>
+     Preferred method of contact: 
+     <input type="radio" name="method">mail
+     <input type="radio" name="method">email
+     <input type="radio" name="method">phone
+     <br><br>
+     <input type="checkbox">Check enclosed or 
+     <input type="checkbox"> Please charge my credit card
+     <br><br>
+     Name on card: 
+     <input type="text" id="txt" required>
+     Card number:
+     <input type="number" id="no" required><br><br>
+     Expiration date:
+     <input type="text" id="ex" required><br><br>
+     Amount: <br>
+     <input type="checkbox">$500
+     <input type="checkbox">$554
+     <input type="checkbox">$220
+     <input type="checkbox">$100
+     <input type="checkbox">$300 <br><br><br>
+     <input type="submit" value="Submit" id="btn">
+
+
+<!-- </div> -->
+</div>
+</fieldset>
+</body>
+</html>
