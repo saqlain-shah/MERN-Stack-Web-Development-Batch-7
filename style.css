@@ -1,0 +1,50 @@
+
+.login{
+margin-top: 5%;;
+margin-left: 35%;
+width: 30%;
+height: 70vh;
+background-color:beige;
+border: 1px solid black;
+
+
+}
+.login:hover{
+    width: 32%;
+height: 73vh;
+background-color:rgb(224, 224, 210);
+border-radius: 10px;
+background-color: rgb(49, 49, 142);
+transition: 0.5s;
+}
+.heading{
+   
+    text-align: center;
+    margin-bottom: 5%;
+}
+.form-body{
+    margin-left: 30%;
+    margin-top: 5%;
+}
+.label{
+  margin-top: 5%;
+}
+.input{
+    padding: 5px;
+    margin-top: 2%;
+}
+.btn{
+   
+    padding: 0px 5px 0px 5px;
+    float: right;
+    margin: 3px;
+    
+}
+.btn:hover  {
+    color: white;
+    background-color: green;
+    transition: 1s ;
+    cursor: pointer;
+   
+   
+}
