@@ -5,7 +5,12 @@ const person={
         surName : "Hotovi"
     },
     age : 23,
-    PhoneNo : 3534
+    PhoneNo : {
+        scomNo :[35548703,355489809,35584398],
+        TelenorNo : [346525, 3456590,3478450]
+    }
+        
+    
 }
 
 Person1=[
@@ -15,6 +20,7 @@ Person1=[
 console.log("First Name : " + person.name.firstName)   //accessing the specific key value using dot(.) notation
 
 console.log("Last Name : " + person['name']['lastName'])  //accessing the specific key value using bracket notation
+console.log("SCOM Numbers:  " + person.PhoneNo.scomNo)
 
 console.log("array"  + Person1)
 let num=33;
