@@ -1,5 +1,10 @@
 
 
 console.log("Hello")
+ var a=10;
+ function show(){
+    let name="Pervez"
 
-console.log("Hello")
+ }
+ name="Pervez";
+ console.log(name);
