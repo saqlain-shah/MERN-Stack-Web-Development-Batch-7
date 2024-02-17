@@ -14,7 +14,7 @@ const person={
 }
 
 Person1=[
-    "Pervez", "Abbas", 23, 035545
+    "Pervez", "Abbas", 23, 35545
 ]
 
 console.log("First Name : " + person.name.firstName)   //accessing the specific key value using dot(.) notation
