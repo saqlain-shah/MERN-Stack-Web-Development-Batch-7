@@ -13,6 +13,7 @@
 <h1>hi i am muhammad ali </h1>
 <script>
     console.log("Hello! Batch7 ");
+    console.log("changes");
     
 </script>
     
