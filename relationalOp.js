@@ -18,7 +18,7 @@ else{
     console.log("false");
 
 }
-console.log("for &&");
+console.log("for !");
 if(!(num1!=num2&&num1!=num2)){
     console.log("true");
 }
