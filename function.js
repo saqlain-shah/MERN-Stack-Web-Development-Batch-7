@@ -1,6 +1,6 @@
 
 function show(){
-    console.log("hellow") //1st type
+    console.log("hellow")  //1st type
 }
 function show1(nam,fname){
     console.log(nam,fname);  //2th type
