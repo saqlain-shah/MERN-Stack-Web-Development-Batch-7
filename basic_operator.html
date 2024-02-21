@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Operator</title>
+</head>
+<body>
+    <input id="age" type="number" placeholder="Enter your age ">
+    <div id="box">
+
+    </div>
+    <button onclick="checked()">check</button>
+
+</body>
+<script>
+        var age= document.getElementById("age");
+        var data=age.value;
+
+    function checked(data){
+    if(data>=18){
+        document.getElementById("box").innerHTML="He/She can apply for the job";
+    }
+    else{
+        document.getElementById("box").innerHTML="He/She can not apply for the job";
+    }
+    }
+</script>
+</html>
