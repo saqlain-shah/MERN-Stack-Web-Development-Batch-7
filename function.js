@@ -30,8 +30,7 @@ function display(){
 
 
 function showMessage(a){
-
-    a()
+a()
 }
 
 Addition( )
