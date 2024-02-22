@@ -13,3 +13,4 @@ function show(){
 }
 
 //console.log(fname);//can't access from outside of the function 
+const NAME="Pervez";

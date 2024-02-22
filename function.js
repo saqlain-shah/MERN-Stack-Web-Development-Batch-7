@@ -39,7 +39,11 @@ function display(){
 
 function showMessage(a){
 
+
     a(5);
+
+a()
+
 }
 
 Addition( )
