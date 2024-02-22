@@ -8,11 +8,15 @@ function show2(){
     }
 if(5==4 ? Show():show2());
 var a=4;
+
+
+
 var b="ali";
 
 
 console.log(b*a);
 switch(a){
+
     case 1:
         console.log("pervaz1");
         break;
