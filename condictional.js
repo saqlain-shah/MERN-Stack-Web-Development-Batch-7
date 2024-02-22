@@ -50,15 +50,19 @@ switch(vowels){
         console.log("e is vowels");
     break ;
         console.log("consonent");
+
         break;
-        
+
    
 }
 
 
 
 
+
+
 // *******************Escap characters***************************
+var tab ="gjfkld"
 let name ="name";
 let fName ="taqi";
 console.log(name);
