@@ -1,0 +1,12 @@
+console.log(3+4);
+console.log(3-4);
+console.log(3*4);
+console.log(6/2);
+console.log(6%2);
+//console.log(++6);
+//console.log(6--);
+var a=30;
+a++;
+console.log(a);
+a--;
+console.log(a);
