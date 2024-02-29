@@ -22,3 +22,4 @@ let  replace=text.replaceAll("ali","javiad")
 console.log(replace);
 text.split(" / ")
 console.log(text);
+console.log(text.repeat(3))
