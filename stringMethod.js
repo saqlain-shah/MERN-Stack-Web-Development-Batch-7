@@ -1,4 +1,6 @@
 let text="ali,akram,babar,ali,ali,ali"
+let a=text.charAt(3)
+console.log(a)
 let part=text.slice(-6,-2)
 console.log(part)
 let part1=text.substring(-3)
