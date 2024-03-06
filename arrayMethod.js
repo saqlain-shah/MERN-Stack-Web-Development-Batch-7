@@ -6,5 +6,5 @@
 
 let arr =['ali','aslam','akbar','yousf'];
 console.log(arr);
-let newArr=arr.pop();// it will add new name to at the end of array
+let newArr=arr.push("noor");// it will add new name to at the end of array
 console.log(newArr);

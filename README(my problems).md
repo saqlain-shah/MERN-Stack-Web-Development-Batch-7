@@ -20,5 +20,11 @@ here we understand that according to lexical scoping the local and globel variab
 
 
 2:arrays and object
+obje methods// self assigmint
 
 3:function 
+function method 
+
+<!-- Advance Java script -->
+ <!-- rest and spread operator 
+  destructuring ,letiral -->
