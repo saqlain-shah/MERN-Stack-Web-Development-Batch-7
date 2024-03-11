@@ -18,16 +18,21 @@
 //        it throws an error, which can be caught using try...catch blocks.
 
 // Here's a simple example:
+function fetch(){
+    console.log("i can fetch data ")
+}
 
 
-async function fetchData() {
+async function fetchData(a) {
     // Simulate fetching data from an API with a delay
     return new Promise(resolve => {
         setTimeout(() => {
             resolve("Data fetched successfully!");
+            console.log(a);
         }, 2000); // Simulate 2 seconds delay
     });
 }
+fetchData(fetch);
 
 async function processData() {
     console.log("Fetching data...");

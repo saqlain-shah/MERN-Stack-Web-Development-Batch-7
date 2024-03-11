@@ -43,8 +43,6 @@ function add(...a)
 }
 console.log(add(1,2,3,4));
 
-
-
 // letiral 
 console.log(`the last name of student is ${n}`);
 console.log(`the last nam ${n}`);
