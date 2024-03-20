@@ -1,17 +1,14 @@
-import React from "react"
-import FirstComponent from "./components/firstComponent"
+import React from "react";
+import FirstComponent from "./components/firstComponent";
+import SecondComponent from "./components/secondComponent";
 
 function App() {
   return (
-<React.Fragment>
-
-<FirstComponent/>
-
-
-
-      </React.Fragment>
-
-  )
+    <React.Fragment>
+      <FirstComponent />
+      <SecondComponent/>
+    </React.Fragment>
+  );
 }
 
-export default App
+export default App;
