@@ -1,12 +1,17 @@
 // App.jsx
 import React from 'react';
-import UserDataForm from './components/firstComponent.jsx';
+// import UserDataForm from './components/firstComponent.jsx';
+import SignUp from './components/SignUp.jsx';
+import SignIn from './components/SignIn.jsx';
+
 
 const App = () => {
   return (
     <div>
-      <h1>User Data Form</h1>
-      <UserDataForm />
+
+      <SignUp/> 
+      <SignIn />      
+
     </div>
   );
 };
