@@ -45,17 +45,17 @@
         
         }}
         >
-        <Paper elevation={3} style={{ padding: 20, width: 300, height: 450 }}>
+        <Paper elevation={3} style={{ padding: 20, width: 300, height: 450 ,display:'flex', flexDirection:'column', justifyContent:'space-between'}}>
       <h2 style={{ textAlign: 'center' }}>SignUp</h2>
 
-      <InputLabel htmlFor="name" style={{ marginTop: 20, marginLeft: 20 }}>Name:</InputLabel>
-      <TextField id="name" variant="outlined" name='name'  value={userData.name} onChange={handleChange} style={{ marginLeft: 20, width: 'calc(100% - 40px)' }} required />
+      {/* <InputLabel htmlFor="name" style={{ marginTop: 20, marginLeft: 20 }}>Name:</InputLabel> */}
+      <TextField id="name" variant="outlined" name='name' label='Name' value={userData.name} onChange={handleChange} style={{ marginLeft: 20, width: 'calc(100% - 40px)' }} required />
 
-      <InputLabel htmlFor="email" style={{ marginTop: 20, marginLeft: 20 }}>Email:</InputLabel>
-      <TextField id="email" type='email' name='email' variant="outlined" value={userData.email} onChange={handleChange} style={{ marginLeft: 20, width: 'calc(100% - 40px)' }} />
+      {/* <InputLabel htmlFor="email" style={{ marginTop: 20, marginLeft: 20 }}>Email:</InputLabel> */}
+      <TextField id="email" type='email' name='email' label='Email' variant="outlined" value={userData.email} onChange={handleChange} style={{ marginLeft: 20, width: 'calc(100% - 40px)' }} />
 
-      <InputLabel htmlFor="password" style={{ marginTop: 20, marginLeft: 20 }}>Password:</InputLabel>
-      <TextField id="password" type='password' name='password' variant="outlined" value={userData.password} onChange={handleChange} style={{ marginLeft: 20, width: 'calc(100% - 40px)' }} />
+      {/* <InputLabel htmlFor="password" style={{ marginTop: 20, marginLeft: 20 }}>Password:</InputLabel> */}
+      <TextField id="password" type='password' name='password' label='Password' variant="outlined" value={userData.password} onChange={handleChange} style={{ marginLeft: 20, width: 'calc(100% - 40px)' }} />
       <br />
 
       <Button variant="contained" type='Submit' onClick={handleSubmit} style={{ marginLeft: 20, marginTop: 20, width:'calc(100% - 40px)' }}>Register</Button>
