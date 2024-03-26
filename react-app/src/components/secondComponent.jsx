@@ -1,56 +1,57 @@
 import React, { useState } from "react";
+import TextField from "@mui/material/TextField";
+import Button from "@mui/material/Button";
+import { Link } from "react-router-dom";
 
 export default function SecondComponent() {
-
-
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    password: ''
+    email: "",
+    password: "",
   });
 
-  // const handleChange = (e) => {
-  //   const { name, value } = e.target;
-  //   setFormData((prevState )=> ({
-  //     ...prevState,
-  //     [name]: value
-  //   }));
-  // };
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
 
   const handleSubmit = () => {
-    const { name, email, password } = formData;
-    alert(`Name: ${name}  
-    Email: ${email}
-    Password: ${password}`);
+    const { email, password } = formData;
+    alert(`Email: ${email}\nPassword: ${password}`);
   };
 
   return (
     <React.Fragment>
-
-      <h1>Second Compon</h1>
-      <label>Name</label>
-      <input
-        name="name"
-        value={formData.name}
-        type="text"
-        onChange={(e)=>{setFormData({...formData,name:e.target.value})}}
-      />
-      <label>Email</label>
-      <input
+      <h1>Sign In</h1>
+      <TextField
+        label="Email"
         name="email"
         value={formData.email}
         type="email"
-        onChange={(e)=>{setFormData({...formData, email:e.target.value})}}
+        onChange={handleChange}
+        fullWidth
+        margin="normal"
+        variant="outlined"
       />
-      <label>Password</label>
-      <input
+      <TextField
+        label="Password"
         name="password"
         value={formData.password}
         type="password"
-        onChange={(e)=>{setFormData({...formData, password:e.target.value})}}
+        onChange={handleChange}
+        fullWidth
+        margin="normal"
+        variant="outlined"
       />
-
-      <button onClick={handleSubmit}>Submit</button>
+      <Button variant="contained" color="primary" onClick={handleSubmit}>
+        Submit
+      </Button>
+      <div>
+        I don't have an account?
+  {/* <Link to="/login">SignUp</Link> */}
+      </div>
     </React.Fragment>
   );
 }

@@ -9,9 +9,7 @@ import {
   Checkbox,
 } from "@mui/material";
 import { IoMdSend } from "react-icons/io";
-import { SlLike } from "react-icons/sl";
-import { FaRegShareFromSquare } from "react-icons/fa6";
-import { FcLike } from "react-icons/fc";
+
 
 export default function FirstComponent() {
   const [name, setName] = useState();
@@ -21,7 +19,7 @@ export default function FirstComponent() {
   const [dob, setDob] = useState();
   return (
     <React.Fragment>
-      <h1>First Component</h1>
+      <h1>Sign Up</h1>
       <Box>
         <TextField
           label="Name"
