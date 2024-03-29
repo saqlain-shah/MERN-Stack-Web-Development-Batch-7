@@ -5,6 +5,7 @@
   import  TextField from '@mui/material/TextField';
   import InputLabel from '@mui/material/InputLabel';
   import Button from '@mui/material/Button';
+  import Snackbar from '@mui/material/Snackbar';
 
 
   export default function SignUp() {
@@ -33,6 +34,13 @@
         });
       };
 
+// snackBar
+      const [open, setOpen] = React.useState(false);
+
+      const handleClick = () => {
+        setOpen(true);
+      };
+
 
 
     return (
@@ -58,7 +66,15 @@
       <TextField id="password" type='password' name='password' label='Password' variant="outlined" value={userData.password} onChange={handleChange} style={{ marginLeft: 20, width: 'calc(100% - 40px)' }} />
       <br />
 
-      <Button variant="contained" type='Submit' onClick={handleSubmit} style={{ marginLeft: 20, marginTop: 20, width:'calc(100% - 40px)' }}>Register</Button>
+      <Button variant="contained" type='Submit' onSubmit={handleSubmit} onClick ={handleClick} style={{ marginLeft: 20, marginTop: 20, width:'calc(100% - 40px)' }}>Register</Button>
+
+
+      <Snackbar
+        open={open}
+        autoHideDuration={2000}
+        message="Success"
+     
+      />
     </Paper>
         </div>
 
