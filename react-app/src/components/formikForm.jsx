@@ -108,9 +108,8 @@ const PersonalInfoForm = () => {
               <FormControlLabel value="male" control={<Radio />} label="Male" />
               <FormControlLabel
                 value="female"
-                control={<Radio defaultValue={true} />}
+                control={<Radio />}
                 label="Female"
-                defaultChecked
               />
               <FormControlLabel
                 value="other"
