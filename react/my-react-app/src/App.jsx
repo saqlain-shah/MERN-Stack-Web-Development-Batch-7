@@ -1,26 +1,53 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
+import Registration from './component/registration'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
+// import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
+import Signup from './component/signup'
+import Navbar from './component/navbar'
+import About from './component/about';
+import Contact from './component/contact';
+import Home from './component/home';
+import { Resturent } from './resturent/resturent';
+import Multistepform from './multistepForm/multistepform';
 function App() {
-  const [count, setCount] = useState(0)
 
+
+  //   const student ={
+  //     name :'ali',
+  //     rollno:12,
+  //   }
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <h1>welcome muhammad ali </h1>
-   
+
+
+      <Routes>
+        <Route path='/*' element={<Navbar />}>
+          <Route path='home' element={<Home />} />
+          <Route path='about' element={<About />} />
+          <Route path='contact' element={<Contact />} />
+        </Route>
+
+        <Route path='/login' Component={Registration} />
+        <Route path='/signup' Component={Signup} />
+        <Route path='/resturent/resturent' Component={Resturent}/>
+        <Route path='/multistepform' Component={Multistepform}/>
+
+
+
+
+
+      </Routes>
+
+
+
+
+
+
+
     </>
   )
 }
 
-export default App
+export default App;
